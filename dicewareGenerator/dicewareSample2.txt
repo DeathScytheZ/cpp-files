@@ -3271,7 +3271,7 @@
 34155	isle
 34156	ism
 34161	isn't
-34162	israel
+34162	isis
 34163	issue
 34164	isuzu
 34165	it
