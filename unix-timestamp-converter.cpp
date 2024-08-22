@@ -2,9 +2,6 @@
 #include <string>
 
 
-
-
-
 void toHumanDate(long int timestamp){
     long int week_day, day, month, year, hour, minute, second, extra_seconds, nbr_days;
     int curr_year, months_list[12] = {31, 28, 31, 30, 31, 30,
@@ -116,10 +113,20 @@ void toHumanDate(long int timestamp){
 }
 
 
+
 int main(){
-    system("cls");
-    long int timestamp;
-    std::cout << "Enter the Timestamp: ";
-    std::cin >> timestamp;
-    toHumanDate(timestamp);
+    std::string input;
+    std::string wait;
+    while(true){
+        system("cls");
+        std::cout << "Enter the Timestamp: ";
+        std::cin >> input;
+        if(input == "exit")
+            break;
+        long int timestamp = stol(input);
+        toHumanDate(timestamp);
+        std::cout << std::endl;
+        std::cin.ignore();
+        getchar();
+    }
 }
