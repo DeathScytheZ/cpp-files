@@ -30,8 +30,6 @@ std::string pswordGenerator(int length){
 }
 
 
-
-
 int main(){
     int length;
     while(true){
